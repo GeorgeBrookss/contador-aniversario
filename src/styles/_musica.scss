@@ -1,0 +1,57 @@
+@use './components/variaveis';
+
+
+
+
+
+.musicasFav{
+    padding-top: 40px;
+    display: flex;
+    background-image: linear-gradient( variaveis.$yellow1, variaveis.$yellow2, variaveis.$black1);
+    padding: 80px 202px;
+
+    @media(max-width: 640px){
+        padding: 0;
+    }
+    @media(max-width: 794px){
+        padding: 0;
+    }
+    @media(max-width: 1024px){
+        padding: 0;
+    }
+
+    @media(max-width: 770px){
+        display: block;
+        text-align: center;
+    }
+    .container{
+        display: block;
+        margin: 0 60px;
+
+    }
+
+
+    &__title{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    &__text{
+        font-size: 20px;
+    }
+
+    &__img{
+        margin-right: 50px;
+        width: 500px;
+        border-radius: 10px;
+        @media(max-width: 770px){
+            margin-right: 0;        
+            margin-top: 28px;
+            width: 300px;
+        }
+        @media(max-width: 1024px){
+            
+            padding-bottom: 40px;
+        }
+    }
+
+}
